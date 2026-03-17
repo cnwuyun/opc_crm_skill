@@ -1,0 +1,26 @@
+{
+  "name": "opc-sales-skill",
+  "version": "1.0.0",
+  "description": "OPC CRM 客户关系管理系统 API 集成技能",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "crm",
+    "sales",
+    "opc",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+# 依赖库（体积巨大，可以通过 package.json 重新安装）
+node_modules/
+
+# 隐私与环境配置文件（包含 API Key、数据库密码等）
+.env
+.env.local
+.env.development.local
+
+# 编译产物/临时文件夹
+dist/
+build/
+.cache/
+
+# AI工具
+.vscode
+.qoder
+
+# 操作系统生成的无用文件
+.DS_Store
+Thumbs.db
+nul
+
+# 日志文件
+*.log
+npm-debug.log*
