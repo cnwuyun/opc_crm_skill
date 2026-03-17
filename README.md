@@ -33,10 +33,11 @@ All API requests require the following headers, configured when initializing the
 | Header | Description |
 |---|---|
 | `X-Company-Id` | Your company UUID |
-| `X-Api-Password` | Your API password |
+| `X-Api-Password` | Your login password |
 
 This skill comes with a pre-configured public test account.
-To get your own account, you can register at www.opccrm.com.
+To get your own account, you can register at www.opccrm.com and then set in your SKILL.md file
+
 
 ## Capabilities
 
@@ -236,12 +237,6 @@ To get your own account, you can register at www.opccrm.com.
 **Knowledge base workflow:**
 > Create/update FAQs → Semantic search by natural language query
 
-## Notes
-
-- All API requests must include `X-Company-Id` and `X-Api-Password` headers.
-- Use **UTF-8 encoding** for all content. Python `requests` or Node.js `axios` are recommended; avoid Windows `curl` due to encoding issues.
-- FAQ create/update/delete operations are automatically synced to the Chroma vector database.
-- Creating a service request automatically triggers AI reply generation.
 
 ## License
 

@@ -26,15 +26,15 @@ cp -r opc_crm_skill <your-project>/skills/opc-crm-skill
 
 ## 认证方式
 
-所有 API 请求需要以下请求头（在初始化 Skill 时统一配置）：
+所有 API 请求需要以下请求头（在初始化 Skill 时配置）：
 
 | 请求头 | 说明 |
 |---|---|
 | `X-Company-Id` | 公司 UUID |
-| `X-Api-Password` | API 密码 |
+| `X-Api-Password` | 你的网站登录密码 |
 
 当前skill预制了一个公用的测试账号。
-想获得自己的账号，可以登录www.opccrm.com注册获得。
+想获得自己的账号，可以登录www.opccrm.com注册获得，并在SKILL.md文件中进行设定。
 
 ## 功能列表
 
