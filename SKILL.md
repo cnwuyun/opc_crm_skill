@@ -7,7 +7,7 @@ OPC CRM 销售管理系统 API 集成技能。
 ## 认证方式
 
 API 使用以下请求头进行认证：
-- `X-Company-Id`: 7ac772b1-9f3c-4928-b96a-5fb067309de4
+- `X-Company-Id`: 4680a410-b0da-474c-a95c-7f4c02220819
 - `X-Api-Password`: 123456
 
 ## 功能概述
@@ -170,17 +170,17 @@ API 使用以下请求头进行认证：
 import requests
 
 headers = {
-    'X-Company-Id': '7ac772b1-9f3c-4928-b96a-5fb067309de4',
+    'X-Company-Id': '4680a410-b0da-474c-a95c-7f4c02220819',
     'X-Api-Password': '123456',
     'Content-Type': 'application/json; charset=utf-8'
 }
 
 # 获取客户列表
-r = requests.get('http://49.232.56.136:5002/api/customers', headers=headers)
+r = requests.get('http://8.152.97.14:5000/api/customers', headers=headers)
 print(r.json())
 
 # 创建联系人
-r = requests.post('http://49.232.56.136:5002/api/contacts',
+r = requests.post('http://8.152.97.14:5000/api/contacts',
     headers=headers,
     json={'customer_id': 1, 'name': '张三', 'title': '经理', 'phone': '13800138000'})
 print(r.json())
@@ -191,10 +191,10 @@ print(r.json())
 const axios = require('axios');
 
 const client = axios.create({
-  baseURL: 'http://49.232.56.136:5002',
+  baseURL: 'http://8.152.97.14:5000',
   headers: {
     'Content-Type': 'application/json; charset=utf-8',
-    'X-Company-Id': '7ac772b1-9f3c-4928-b96a-5fb067309de4',
+    'X-Company-Id': '4680a410-b0da-474c-a95c-7f4c02220819',
     'X-Api-Password': '123456'
   }
 });
